@@ -38,7 +38,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 /* Keymap 0: Basic layer
  *
  * ,--------------------------------------------------.           ,--------------------------------------------------.
- * |  Esc   |   1  |   2  |   3  |   4  |   5  |      |           |      |   6  |   7  |   8  |   9  |   0  |   -    | 
+ * |  Esc   |   1  |   2  |   3  |   4  |   5  |      |           |      |   6  |   7  |   8  |   9  |   0  |   -    |
  * |--------+------+------+------+------+------+------|           |------+------+------+------+------+------+--------|
  * |  Tab   |   Q  |   W  |   E  |   R  |   T  | Home |           | PgUp |   Y  |   U  |   I  |   O  |   P  |    \   |
  * |--------+------+------+------+------+------|      |           |      |------+------+------+------+------+--------|
@@ -46,10 +46,10 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  * |--------+------+------+------+------+------|  End |           | PgDn |------+------+------+------+------+--------|
  * |  LSft  |   Z  |   X  |   C  |   V  |   B  |      |           |      |   N  |   M  |   ,  |   .  |   /  |   '    |
  * `--------+------+------+------+------+-------------'           `-------------+------+------+------+------+--------'
- *   |      |      |      | LAlt | LGUI |                                       | RGUI |~LCode|~LNav |      |      |
+ *   |      |      | LAlt |      | LGUI |                                       | RGUI |~LCode|~LNav |      |      |
  *   `----------------------------------'                                       `----------------------------------'
  *                                        ,-------------.       ,-------------.
- *                                        | ~LSys|      |       |      | 　　 |
+ *                                        | ~LSys|      |       |      |      |
  *                                 ,------+------+------|       |------+------+------.
  *                                 |      |      |      |       |      |      |      |
  *                                 | BSPC |      |------|       |------| Enter| space|
@@ -67,7 +67,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
         KC_TAB,         KC_Q,       KC_W,       KC_E,                KC_R,              KC_T,               KC_HOME,
         KC_LCTL, LCTL_T(KC_A),      KC_S,       KC_D,                KC_F,              KC_G,
         KC_LSFT,        KC_Z,       KC_X,       KC_C,                KC_V,              KC_B,               KC_END,
-        XXXXXXX,        XXXXXXX,    XXXXXXX,    KC_LALT,             KC_LGUI,
+        XXXXXXX,        XXXXXXX,    KC_LALT,    XXXXXXX,             KC_LGUI,
                                                                                         MO(L_SYS),          XXXXXXX,
                                                                                                             XXXXXXX,
                                                                      KC_BSPC,           XXXXXXX,            KC_LALT,
@@ -116,7 +116,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
                                                     _______,    _______,    _______,
        // right hand
        KC_F12,  KC_F6,      KC_F7,      KC_F8,      KC_F9,      KC_F10,     KC_DEL,
-       _______, XXXXXXX,    S(KC_LBRC), S(KC_RBRC), S(KC_EQL),  _______,    KC_BQ,
+       _______, XXXXXXX,    S(KC_LBRC), S(KC_RBRC), S(KC_EQL),  _______,    KC_GRV,
                 KC_BSPC,    KC_LBRC,    KC_RBRC,    KC_EQL,     KC_QUOT,    XXXXXXX,
        _______, XXXXXXX,    XXXXXXX,    XXXXXXX,    XXXXXXX,    XXXXXXX,    XXXXXXX,
                             _______,    _______,    _______,    _______,    _______,
