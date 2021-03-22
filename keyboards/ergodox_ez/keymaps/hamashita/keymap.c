@@ -46,7 +46,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  * |--------+------+------+------+------+------|  End |           | PgDn |------+------+------+------+------+--------|
  * |  LSft  |   Z  |   X  |   C  |   V  |   B  |      |           |      |   N  |   M  |   ,  |   .  |   /  | RSft    |
  * `--------+------+------+------+------+-------------'           `-------------+------+------+------+------+--------'
- *   |      |      | LAlt |      | LGUI |                                       | RGUI |~LCode|~LNav |      |      |
+ *   |      |      | LAlt |~LCode| LGUI |                                       | RGUI |~LNav |      |      |      |
  *   `----------------------------------'                                       `----------------------------------'
  *                                        ,-------------.       ,-------------.
  *                                        | ~LSys|      |       |      |      |
@@ -67,7 +67,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
         KC_TAB,         KC_Q,       KC_W,       KC_E,                KC_R,              KC_T,               KC_HOME,
         KC_LCTL, LCTL_T(KC_A),      KC_S,       KC_D,                KC_F,              KC_G,
         KC_LSFT,        KC_Z,       KC_X,       KC_C,                KC_V,              KC_B,               KC_END,
-        XXXXXXX,        XXXXXXX,    KC_LALT,    XXXXXXX,             KC_LGUI,
+        XXXXXXX,        XXXXXXX,    KC_LALT,    MO(L_CODE),           KC_LGUI,
                                                                                         MO(L_SYS),          XXXXXXX,
                                                                                                             XXXXXXX,
                                                                      KC_BSPC,           XXXXXXX,            KC_LALT,
@@ -76,7 +76,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
         KC_PGUP,        KC_Y,       KC_U,             KC_I,       KC_O,       KC_P,             KC_BSLS,
                         KC_H,       KC_J,             KC_K,       KC_L,       RCTL_T(KC_SCLN),  KC_ENT,
         KC_PGDN,        KC_N,       KC_M,             KC_COMM,    KC_DOT,     KC_SLSH,          KC_RSFT,
-                                    KC_RGUI,          MO(L_CODE), MO(L_NAV),  XXXXXXX,          XXXXXXX,
+                                    KC_RGUI,          MO(L_NAV),  XXXXXXX,    XXXXXXX,          XXXXXXX,
         XXXXXXX,        XXXXXXX,
         XXXXXXX,
         KC_RALT,        KC_ENT,   KC_SPC
