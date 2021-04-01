@@ -42,7 +42,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  * |--------+------+------+------+------+------+------|           |------+------+------+------+------+------+--------|
  * |  Tab   |   Q  |   W  |   E  |   R  |   T  | Home |           | PgUp |   Y  |   U  |   I  |   O  |   P  |    \   |
  * |--------+------+------+------+------+------|      |           |      |------+------+------+------+------+--------|
- * |  LCtl  |A/LCtl|   S  |   D  |   F  |   G  |------|           |------|   H  |   J  |   K  |   L  |;/RCtl| Enter  |
+ * |  LCtl  |   A  |   S  |   D  |   F  |   G  |------|           |------|   H  |   J  |   K  |   L  |;/RCtl| Enter  |
  * |--------+------+------+------+------+------|  End |           | PgDn |------+------+------+------+------+--------|
  * |  LSft  |   Z  |   X  |   C  |   V  |   B  |      |           |      |   N  |   M  |   ,  |   .  |   /  | RSft    |
  * `--------+------+------+------+------+-------------'           `-------------+------+------+------+------+--------'
@@ -65,7 +65,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
         // left hand
         KC_ESC,         KC_1,       KC_2,       KC_3,                KC_4,              KC_5,               XXXXXXX,
         KC_TAB,         KC_Q,       KC_W,       KC_E,                KC_R,              KC_T,               KC_HOME,
-        KC_LCTL, LCTL_T(KC_A),      KC_S,       KC_D,                KC_F,              KC_G,
+        KC_LCTL,        KC_A,      KC_S,       KC_D,                KC_F,              KC_G,
         KC_LSFT,        KC_Z,       KC_X,       KC_C,                KC_V,              KC_B,               KC_END,
         XXXXXXX,        XXXXXXX,    KC_LALT,    MO(L_CODE),           KC_LGUI,
                                                                                         MO(L_SYS),          XXXXXXX,
