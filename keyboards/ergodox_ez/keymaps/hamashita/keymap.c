@@ -157,11 +157,11 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
                                                                             _______,
                                                     _______,    _______,    _______,
        // right hand
-       KC_F12,                KC_F6,                 KC_F7,               KC_F8,                  KC_F9,         KC_F10,     KC_DEL,
-       KC_BRIGHTNESS_DOWN,    KC_BRIGHTNESS_UP,      KC_AUDIO_VOL_DOWN,   KC_AUDIO_VOL_UP,        XXXXXXX,       XXXXXXX,    XXXXXXX,
-                              KC_6,                  KC_7,                KC_8,                   KC_9,          KC_0,       XXXXXXX,
-       _______,               XXXXXXX,               XXXXXXX,             XXXXXXX,                XXXXXXX,       XXXXXXX,    XXXXXXX,
-                                                     _______,             _______,                _______,       _______,    _______,
+       KC_F12,                KC_F6,                 KC_F7,               KC_F8,                  KC_F9,              KC_F10,     KC_DEL,
+       XXXXXXX,               KC_BRIGHTNESS_DOWN,    KC_BRIGHTNESS_UP,    KC_AUDIO_VOL_DOWN,      KC_AUDIO_VOL_UP,    XXXXXXX,    XXXXXXX,
+                              KC_6,                  KC_7,                KC_8,                   KC_9,               KC_0,       XXXXXXX,
+       _______,               XXXXXXX,               XXXXXXX,             XXXXXXX,                XXXXXXX,            XXXXXXX,    XXXXXXX,
+                                                     _______,             _______,                _______,            _______,    _______,
        KC_POWER, _______,
        _______,
        _______, _______,    _______
