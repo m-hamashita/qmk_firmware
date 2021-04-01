@@ -65,7 +65,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
         // left hand
         KC_ESC,         KC_1,       KC_2,       KC_3,                KC_4,              KC_5,               XXXXXXX,
         KC_TAB,         KC_Q,       KC_W,       KC_E,                KC_R,              KC_T,               KC_HOME,
-        KC_LCTL,        KC_A,      KC_S,       KC_D,                KC_F,              KC_G,
+        KC_LCTL,        KC_A,       KC_S,       KC_D,                KC_F,              KC_G,
         KC_LSFT,        KC_Z,       KC_X,       KC_C,                KC_V,              KC_B,               KC_END,
         XXXXXXX,        XXXXXXX,    KC_LALT,    MO(L_CODE),           KC_LGUI,
                                                                                         MO(L_SYS),          XXXXXXX,
@@ -86,7 +86,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  * ,--------------------------------------------------.           ,--------------------------------------------------.
  * |    `   |  F1  |  F2  |  F3  |  F4  |  F5  |  F11 |           |  F12 |  F6  |  F7  |  F8  |  F9  |  F10 |   Del  |
  * |--------+------+------+------+------+------+------|           |------+------+------+------+------+------+--------|
- * |        |      |      |  MsU |      |      |      |           |      |      |   {  |   }  |   +  |      |  KC_BQ |
+ * |        |      | PgDn |  MsU | PgUp |      |      |           |      |      |   {  |   }  |   +  |      |  KC_BQ |
  * |--------+------+------+------+------+------|      |           |      |------+------+------+------+------+--------|
  * |        | BtnL |  MsL |  MsD |  MsR | BtnR |------|           |------|      |   [  |   ]  |   =  |   '  |        |
  * |--------+------+------+------+------+------|      |           |      |------+------+------+------+------+--------|
@@ -107,7 +107,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 [L_CODE] = LAYOUT_ergodox(
        // left hand
        KC_GRV,  KC_F1,      KC_F2,      KC_F3,      KC_F4,      KC_F5,      KC_F11,
-       _______, XXXXXXX,    XXXXXXX,    KC_MS_U,    XXXXXXX,    XXXXXXX,    _______,
+       _______, XXXXXXX,    KC_PGDN,    KC_MS_U,    KC_PGUP,    XXXXXXX,    _______,
        _______, KC_BTN1,    KC_MS_L,    KC_MS_D,    KC_MS_R,    KC_BTN2,
        _______, C_WH_D,     C_WH_U,     C_WH_R,     C_WH_L,     XXXXXXX,    _______,
        XXXXXXX, XXXXXXX,    XXXXXXX,    _______,    _______,
