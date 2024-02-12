@@ -20,17 +20,17 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #ifndef CONFIG_H
 #define CONFIG_H
 
-#define BLE_NUS_MIN_INTERVAL 20
-#define BLE_NUS_MAX_INTERVAL 50
-#define BLE_HID_MAX_INTERVAL 60
-#define BLE_SLAVE_LATENCY 3
+#define BLE_NUS_MIN_INTERVAL 10
+#define BLE_NUS_MAX_INTERVAL 15
+#define BLE_HID_MAX_INTERVAL 30
+#define BLE_SLAVE_LATENCY 2
 
 /* USB Device descriptor parameter */
-#define VENDOR_ID       0xEC59
-#define PRODUCT_ID      0x0059
-#define DEVICE_VER      0x0100
-#define MANUFACTURER    SatT
-#define PRODUCT         Caravelle-BLE
+#define VENDOR_ID 0xEC59
+#define PRODUCT_ID 0x0059
+#define DEVICE_VER 0x0100
+#define MANUFACTURER SatT
+#define PRODUCT Caravelle - BLE
 #define DESCRIPTION     Firmware for Caravelle-BLE keyboard
 
 /* key matrix size */
@@ -40,10 +40,10 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #define DIODE_DIRECTION COL2ROW
 
 /* define if matrix has ghost */
-//#define MATRIX_HAS_GHOST
+// #define MATRIX_HAS_GHOST
 
 /* Set 0 if debouncing isn't needed */
-#define DEBOUNCE    1
+#define DEBOUNCE 1
 
 /* Mechanical locking support. Use KC_LCAP, KC_LNUM or KC_LSCR instead in keymap */
 #define LOCKING_SUPPORT_ENABLE
@@ -52,12 +52,11 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 /* key combination for command */
 #define IS_COMMAND() ( \
-    keyboard_report->mods == (MOD_BIT(KC_LSHIFT) | MOD_BIT(KC_RSHIFT)) \
-)
+    keyboard_report->mods == (MOD_BIT(KC_LSHIFT) | MOD_BIT(KC_RSHIFT)))
 
-//#define RGBLIGHT_ANIMATIONS
-//#define RGB_DI_PIN 8     // The pin the LED strip is connected to
-//#define RGBLED_NUM 5     // Number of LEDs in your strip
+// #define RGBLIGHT_ANIMATIONS
+// #define RGB_DI_PIN 8     // The pin the LED strip is connected to
+// #define RGBLED_NUM 5     // Number of LEDs in your strip
 
 /*
  * Feature disable options
@@ -65,16 +64,16 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
 /* disable debug print */
-//#define NO_DEBUG
+// #define NO_DEBUG
 
 /* disable print */
-//#define NO_PRINT
+// #define NO_PRINT
 
 /* disable action features */
-//#define NO_ACTION_LAYER
-//#define NO_ACTION_TAPPING
-//#define NO_ACTION_ONESHOT
-//#define NO_ACTION_MACRO
-//#define NO_ACTION_FUNCTION
+// #define NO_ACTION_LAYER
+// #define NO_ACTION_TAPPING
+// #define NO_ACTION_ONESHOT
+// #define NO_ACTION_MACRO
+// #define NO_ACTION_FUNCTION
 
 #endif
